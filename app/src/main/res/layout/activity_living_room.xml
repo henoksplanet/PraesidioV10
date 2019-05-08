@@ -77,7 +77,7 @@ app:cardCornerRadius="5dp"
             android:textColor="#222"
             android:textStyle="bold"
             android:textOff="off"
-            android:background="000"
+            android:background="#0b000000"
 
             />
 
