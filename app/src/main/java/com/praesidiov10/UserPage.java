@@ -1,29 +1,10 @@
 package com.praesidiov10;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.content.Intent;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.w3c.dom.Text;
-import org.json.*;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 public class UserPage extends AppCompatActivity {
 
@@ -113,7 +94,7 @@ public class UserPage extends AppCompatActivity {
                      String lastnameS = jObject.getString("lastname");
                      lastname.setText("lastname:"+lastnameS);
                      String last_updatedS = jObject.getString("last_updated");
-                     last_updated.setText("last_updated:"+last_updatedS);
+                     last_updated.setText("last_updated:"+last_updatedS)
 
                  }
                  catch(JSONException e){
