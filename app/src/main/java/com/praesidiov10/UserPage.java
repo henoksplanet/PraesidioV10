@@ -94,7 +94,7 @@ public class UserPage extends AppCompatActivity {
                      String lastnameS = jObject.getString("lastname");
                      lastname.setText("lastname:"+lastnameS);
                      String last_updatedS = jObject.getString("last_updated");
-                     last_updated.setText("last_updated:"+last_updatedS);
+                     last_updated.setText("last_updated:"+last_updatedS);k
 
                  }
                  catch(JSONException e){
