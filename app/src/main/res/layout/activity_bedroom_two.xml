@@ -72,7 +72,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/lamp"
-            android:layout_width="180dp"
+            android:layout_width="181dp"
             android:layout_height="180dp"
             android:layout_margin="10dp"
             app:cardCornerRadius="5dp"
