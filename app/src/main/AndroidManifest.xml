@@ -11,7 +11,9 @@
         android:roundIcon="@drawable/icon2"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".LivingRoom"></activity>
+        <activity android:name=".BedroomTwo"></activity>
+        <activity android:name=".BedroomOne" />
+        <activity android:name=".LivingRoom" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +26,7 @@
             android:name=".Registration"
             android:label="@string/title_activity_registration"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

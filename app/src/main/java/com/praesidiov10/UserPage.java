@@ -3,6 +3,7 @@ package com.praesidiov10;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,9 +37,56 @@ public class UserPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_page);
 
+        final CardView livingroom=findViewById(R.id.livingroom);
+        final CardView bedroom1=findViewById(R.id.bedroom1);
+        final CardView bedroom2=findViewById(R.id.bedroom2);
+        final CardView logout=findViewById(R.id.logout);
+
 
         Intent intent = getIntent();
         final String message = intent.getStringExtra("username");
+
+
+
+        livingroom.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                Intent myIntent = new Intent(getBaseContext(),   LivingRoom.class);
+                startActivity(myIntent);
+            }
+        });
+
+        bedroom1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                Intent myIntent = new Intent(getBaseContext(),   BedroomOne.class);
+                startActivity(myIntent);
+            }
+        });
+
+        bedroom2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                Intent myIntent = new Intent(getBaseContext(),   BedroomTwo.class);
+                startActivity(myIntent);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                Intent myIntent = new Intent(getBaseContext(),   MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+
+
+
 
        /* final TextView username = (TextView) findViewById(R.id.username);
         final TextView result = (TextView) findViewById(R.id.result);
